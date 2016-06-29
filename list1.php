@@ -18,15 +18,15 @@
 
 ?>
 
-    <div class="col-md-4 col-sm-4 off_detail">
+    <div class="col-md-4 col-sm-6 col-xm-12 off_detail">
       <div class="bubble-wrap"> 
               
         <div class="bubble-image-wrap"><div class="bubble"><img src="images/<?= $bubble ?>"></div>
         <div class="wishlist_btn_container">
             <div class="icon_effect">
            <ul class="menu">
-                <li class="icon_one addtoCompare"  data-id="<?= $value['office_id'] ?>" ><a href="#" id="color-<?= $value['office_id'] ?>" <?= ($color) ? ' title="Remove form compare" ' : 'title="Add to compare"' ?>  class=" stopProp <?php echo $color; ?>"></a></li>
-                <li class="icone_second shortlist_btn <?= ($value['wishlist']) ? 'addedtowish' : '' ?>"><a class="<?= ($value['wishlist']) ? 'removeFromwish active' : 'addTowish' ?> " <?= ($value['wishlist']) ? ' title="Remove form wishlist" ' : 'title="Add to wishlist"' ?> data-id="<?= $value['office_id'] ?>" href=""></a></li>
+                <li class="icon_one addtoCompare"  data-id="<?= $value['office_id'] ?>" ><a href="#" title="Add to compare" id="color-<?= $value['office_id'] ?>" class=" stopProp <?php echo $color; ?>"></a></li>
+                <li class="icone_second shortlist_btn <?= ($value['wishlist']) ? 'addedtowish' : '' ?>"><a class="<?= ($value['wishlist']) ? 'removeFromwish active' : 'addTowish' ?> " data-id="<?= $value['office_id'] ?>" href=""></a></li>
                 <li class="icon_third"><a href="#" class="launch-map stopProp" title="Show map" data-id="<?= $value['office_id'] ?>" ></a></li>       
           </ul> 
           </div>
@@ -44,7 +44,7 @@
           <div class="project_name"><p><a href="#"><?= $value['office_name'] ?> </a></p></div><!-- //project_name -->
           <div class="location"><?= $value['location'] ?></div><!-- //location -->
            <div class="capacity">Capacity: <?= $value['office_capacity'] ?></div> <!--//capacity -->
-          <div class="price_info"><p>Starts from Rs. <?= $value['price'] ?></p></div><!-- //price_info -->
+          <div class="price_info"><p>Start from Rs. <?= $value['price'] ?></p></div><!-- //price_info -->
           <div class="view_more">
           <span class="left"><a class="product-btn-office" href="<?= base_url('Front_search/product_detail/'.$value['office_id']) ?>">view more</a></span>
           <span class="right">  
